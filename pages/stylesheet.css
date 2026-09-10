@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+p {font-family: Impact,Charcoal,sans-serif;
+	font-size: 75px;
+	font-weight:normal;
+	font-style:normal;
+	text-align:center;
+	color:white}
+
+p2 {font-family: Impact,Charcoal,sans-serif;
+	font-size: 25px;
+	font-weight:normal;
+	font-style:normal;
+	text-align:center;
+	color:white}
+
+p3 {font-family: Impact,Charcoal,sans-serif;
+	font-size: 25px;
+	font-weight:normal;
+	font-style:normal;
+	text-align:center;
+	color:black}
+
+body{
+	background-image:url(../images/stars.png);
+	background-size:cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#planettext{
+	width:100%;
+	height:auto;
+	top:0px;
+	position:relative;
+	text-align:center;
+	
+}
+
+#host{
+	width:90%;
+	height:80%;
+	top:11%;
+	left:5%;
+	background-color:white;
+	padding:10px;
+	align-content:center;
+	position:relative;
+	
+}
+
+#origin2{
+	width:100%;
+	height:2800px;
+	top: 45%;
+	left:0px;
+	position:relative;
+	transform:translateY(-60%);
+}
+
+a:visited, a:link, a:active {
+	color:white;
+	text-align:left;
+	text-decoration: none;
+}
+
+.responsive{
+	width:100%;
+	height:auto;
+	position: relative;
+}
+
+.responsive svg{
+	display: inline-block;
+	position: absolute;
+	top:0;
+	left:0;
+	
+}
