@@ -57,6 +57,7 @@ html {
 	height:1800px;
 	top:2800px;
 	left:0px;
+	padding-top:40px;
 	position:relative;
 	background-color:white;
 }
