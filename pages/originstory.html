@@ -29,14 +29,6 @@
     z-index: 10 !important; /* Forces the SVG layer to sit on top of the image */
   }
 
-  #origin2-anchor {
-    position: absolute !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 0 !important;
-    top: 70%; /* Adjust this percentage to change where the page scrolls down to */
-    scroll-margin-top: 20px !important;
-  }
 </style>
 </head>
 
@@ -44,8 +36,6 @@
 		
 	<div class="origin-wrapper">
 		<img src="../images/originstorygif.gif" class="responsive">
-
-		<div id="origin2-anchor"></div>
 		
 		<svg viewBox="0 0 1024 4000" preserveAspectRatio="none">
 			
@@ -53,8 +43,13 @@
       		<rect x="14.9%" y="36.3%" width="32%" height="2.7%" fill="yellow" fill-opacity="0.4"/>
     	 </a>
     
-    	<!-- Points to our new unique inline anchor -->
-    	<a href="#origin2-anchor">
+		<a href="javascript:void(0);" onclick="
+      		const img = document.querySelector('.origin-wrapper img');
+      		if(img) {
+        		const targetScroll = img.getBoundingClientRect().top + window.scrollY + (img.offsetHeight * 0.55);
+        		window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+      		}
+    		">
       		<rect x="57.9%" y="35.8%" width="32%" height="3.3%" fill="yellow" fill-opacity="0.4"/>
     	</a>
     
