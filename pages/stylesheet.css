@@ -53,12 +53,10 @@ html {
 }
 
 #origin2{
-	width:100%;
-	min-height: 100vh;
-	padding-top:40px;
-	scroll-margin-top:80px;
-	position:relative;
-	background-color:white;
+  min-height: 100vh; /* Forces it to occupy a full screen of height */
+  background-color: white; 
+  padding: 60px 20px; /* Gives content breathing room so it doesn't hug the top screen edge */
+  box-sizing: border-box;
 }
 
 a:visited, a:link, a:active {
@@ -67,16 +65,28 @@ a:visited, a:link, a:active {
 	text-decoration: none;
 }
 
-.responsive{
-	width:100%;
-	height:auto;
-	position: relative;
+.hero-section, #origin2 {
+  display: block;
+  width: 100%;
+  clear: both; /* Prevents any floated elements from breaking the layout */
 }
 
-.responsive svg{
-	display: inline-block;
-	position: absolute;
-	top:0;
-	left:0;
-	
+/* Container manages the image and SVG size strictly */
+.responsive-container {
+  position: relative;
+  width: 100%;
+}
+
+.responsive-container img {
+  width: 100%;
+  height: auto;
+  display: block; /* Prevents tiny ghost spacing beneath the image */
+}
+
+.responsive-container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
