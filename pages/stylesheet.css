@@ -59,6 +59,7 @@ html {
 	left:0px;
 	position:relative;
 	transform:translateY(-90%);
+	background-color:white;
 }
 
 a:visited, a:link, a:active {
