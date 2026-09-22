@@ -58,7 +58,6 @@ html {
   width: 100%;
   height: 0; 
   top: 45%;
-  scroll-margin-top:40px;
 }
 
 a:visited, a:link, a:active {
