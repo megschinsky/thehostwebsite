@@ -29,6 +29,14 @@
     z-index: 10 !important; /* Forces the SVG layer to sit on top of the image */
   }
 
+  #origin2-scroll-target {
+    display: block !important;
+    position: relative !important;
+    height: 0px !important;
+    width: 100% !important;
+	scroll-margin-top: -2000px !important; 
+  }
+
 </style>
 </head>
 
@@ -43,7 +51,7 @@
       		<rect x="14.9%" y="36.3%" width="32%" height="2.7%" fill="yellow" fill-opacity="0.4"/>
     	 </a>
     
-		<a href="#" id="middle-scroll-btn">
+		<a href="#origin2-scroll-target">
       		<rect x="57.9%" y="35.8%" width="32%" height="3.3%" fill="yellow" fill-opacity="0.4"/>
    	 	</a>
     
@@ -51,21 +59,11 @@
      		<rect x="36.7%" y="92.8%" width="29.9%" height="2.8%" fill="yellow" fill-opacity="0.4"/>
    		</a>
 			
-		<g id="origin2-target" transform="translate(0, 100)"></g>
-			
 	  </svg>
 
     </div>
 
-	<script>
-  		document.getElementById('middle-scroll-btn').addEventListener('click', function(e) {
-    	e.preventDefault(); // Prevents the browser from jumping to the top of the page
-    	const target = document.getElementById('origin2-target');
-    	if (target) {
-      		target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-	    	}
-  		});
-	</script>
+	<div id="origin2-scroll-target"></div>
 	
 </body>
 </html>
