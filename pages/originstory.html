@@ -29,14 +29,6 @@
     z-index: 10 !important; /* Forces the SVG layer to sit on top of the image */
   }
 
-  #origin2-scroll-target {
-    display: block !important;
-    position: relative !important;
-    height: 0px !important;
-    width: 100% !important;
-	scroll-margin-top: 2000px !important; 
-  }
-
 </style>
 </head>
 
@@ -45,10 +37,10 @@
 	
 	
 	<div class="origin-wrapper">
-
-		<div id="origin2-scroll-target"></div>
 		
 		<img src="../images/originstorygif.gif" class="responsive">
+
+		<div id="origin2-anchor" style="position: absolute !important; top: 2500px !important; left: 0; width: 100%; height: 1px;"></div>
 		
 		<svg viewBox="0 0 1024 4000" preserveAspectRatio="none">
 			
@@ -56,7 +48,7 @@
       		<rect x="14.9%" y="36.3%" width="32%" height="2.7%" fill="yellow" fill-opacity="0.4"/>
     	 </a>
     
-		<a href="#origin2-scroll-target">
+		<a href="#origin2-anchor">
       		<rect x="57.9%" y="35.8%" width="32%" height="3.3%" fill="yellow" fill-opacity="0.4"/>
    	 	</a>
     
