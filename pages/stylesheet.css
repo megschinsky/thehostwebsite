@@ -66,6 +66,19 @@ a:visited, a:link, a:active {
 	text-decoration: none;
 }
 
+.responsive{
+	width:100%;
+	height:auto;
+	position: relative;
+}
+
+.responsive svg{
+	display: inline-block;
+	position: absolute;
+	top:0;
+	left:0;
+	
+}
 /* Container manages the image and SVG size strictly */
 .responsive-container {
   position: relative;
@@ -86,16 +99,3 @@ a:visited, a:link, a:active {
   height: 100%;
 }
 
-.responsive{
-	width:100%;
-	height:auto;
-	position: relative;
-}
-
-.responsive svg{
-	display: inline-block;
-	position: absolute;
-	top:0;
-	left:0;
-	
-}
