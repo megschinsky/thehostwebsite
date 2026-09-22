@@ -55,9 +55,10 @@ html {
 #origin2{
 	width:100%;
 	height:2800px;
-	top: 0%;
+	top: 45%;
 	left:0px;
 	position:relative;
+	transform:translateY(-80%);
 }
 
 a:visited, a:link, a:active {
