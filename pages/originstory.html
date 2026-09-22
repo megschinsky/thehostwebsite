@@ -43,10 +43,11 @@
       		<rect x="14.9%" y="36.3%" width="32%" height="2.7%" fill="yellow" fill-opacity="0.4"/>
     	 </a>
     
-		<g id="scroll-marker" transform="translate(0, 1000)"></g>
-
-
-		<a href="javascript:void(0);" onclick="document.getElementById('scroll-marker').scrollIntoView({ behavior: 'smooth', block: 'start' });">
+		<a href="javascript:void(0);" onclick="
+  		/* This forces the absolute root element of the browser to scroll, bypassing CSS constraints */
+ 			 document.documentElement.scrollTo({ top: 2600, behavior: 'smooth' });
+  			document.body.scrollTo({ top: 2600, behavior: 'smooth' });
+			">
   			<rect x="57.9%" y="35.8%" width="32%" height="3.3%" fill="yellow" fill-opacity="0.4"/>
 		</a>
     
