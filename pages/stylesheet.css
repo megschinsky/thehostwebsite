@@ -58,6 +58,7 @@ html {
 	top: 2000px;
 	left:0px;
 	position:relative;
+	transform:translateY(-60%);
 	background-color:white;
 }
 
