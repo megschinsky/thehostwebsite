@@ -53,8 +53,8 @@ html {
 }
 
 #origin2{
-	width:100%;
-	min-height:1800px;
+	width:1024px;
+	height:1800px;
 	top:2800px;
 	left:0px;
 	position:relative;
